@@ -29,3 +29,4 @@ function isValidAnagram(first_str: string, second_str: string) {
 
 console.log(isValidAnagram('anagram', 'nagaram'));
 console.log(isValidAnagram('listen', 'silent'));
+console.log(isValidAnagram('hello', 'world'));

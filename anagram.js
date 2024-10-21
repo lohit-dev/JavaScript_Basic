@@ -7,7 +7,7 @@ function isValidAnagram(first_str, second_str) {
         var char = first_str[i];
         // console.log('X: ', count[char]);
         if (count[char] == undefined) {
-            //   count[char] = 1;
+            count[char] = 1;
         }
         else {
             count[char]++;
@@ -15,15 +15,16 @@ function isValidAnagram(first_str, second_str) {
     }
     for (var i = 0; i < second_str.length; i++) {
         var char = second_str[i];
-        console.log(count[char] + ':' + char);
+        // console.log(count[char] + ':' + char);
         if (count[char] === undefined || count[char] === 0) {
             return false;
         }
         else {
-            //   count[char]--;
+            count[char]--;
         }
     }
     return true;
 }
 console.log(isValidAnagram('anagram', 'nagaram'));
 console.log(isValidAnagram('listen', 'silent'));
+console.log(isValidAnagram('hello', 'world'));
