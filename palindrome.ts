@@ -6,6 +6,7 @@ function isPalindrome(str: string) {
     if (str[left] !== str[right]) {
       return false;
     }
+
     left++;
     right--;
   }
