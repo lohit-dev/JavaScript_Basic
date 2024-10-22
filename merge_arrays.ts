@@ -1,6 +1,6 @@
 function mergeSortedArrays(arr1: number[], arr2: number[]) {
-  let i,
-    j = 0;
+  let i = 0;
+  let j = 0;
   let mergedArray: number[] = [];
 
   while (i < arr1.length && j < arr2.length) {
@@ -12,6 +12,8 @@ function mergeSortedArrays(arr1: number[], arr2: number[]) {
       j++;
     }
   }
+
+  console.log('m: ', mergedArray);
 
   // Add remaining elements from arr1
   while (i < arr1.length) {
